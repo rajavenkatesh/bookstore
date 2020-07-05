@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        git(url: 'https://github.com/rajavenkatesh/bookstore.git', branch: '*', poll: true)
+        git(url: 'https://github.com/rajavenkatesh/bookstore.git', branch: '*', poll: true, credentialsId: 'github')
       }
     }
 
