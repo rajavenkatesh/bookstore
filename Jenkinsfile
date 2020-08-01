@@ -1,7 +1,8 @@
 pipeline {
   agent any
   triggers {
-    cron('H/15 * * * *')
+   // cron('H/15 * * * *')
+    githubPush()
   }
   stages {
     stage('Check Out code .....') {
