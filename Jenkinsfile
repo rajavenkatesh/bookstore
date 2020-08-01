@@ -2,7 +2,7 @@ pipeline {
   agent any
   triggers {
    // cron('H/15 * * * *')
-    githubPush()
+    githubPush()  // github webhook push
   }
   stages {
     stage('Check Out code .....') {
